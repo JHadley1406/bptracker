@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BPTracker</string>
+
+    <string name="hint_systolic">Systolic</string>
+    <string name="hint_diastolic">Diastolic</string>
+    <string name="hint_pulse">Pulse</string>
+
+    <string name="button_submit">Submit</string>
+
+    <string name="label_systolic">Systolic</string>
+    <string name="label_diastolic">Diastolic</string>
+    <string name="label_pulse">Pulse</string>
+</resources>
