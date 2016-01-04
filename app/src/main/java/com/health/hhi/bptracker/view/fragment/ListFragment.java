@@ -20,6 +20,7 @@ import com.health.hhi.bptracker.view.adapter.BpCursorAdapter;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by Josiah Hadley on 12/11/2015.
@@ -54,12 +55,16 @@ public class ListFragment extends Fragment implements LoaderManager.LoaderCallba
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 Uri deleteUri = DbContract.ReadingEntry.buildReadingUri(position);
-                getContext().getContentResolver().delete(DbContract.ReadingEntry.CONTENT_URI, DbContract.ReadingEntry._ID+"="+mBpCursorAdapter.getItemId(position), null);
+                getContext().getContentResolver().delete(DbContract.ReadingEntry.CONTENT_URI, DbContract.ReadingEntry._ID + "=" + mBpCursorAdapter.getItemId(position), null);
                 return false;
             }
         });
 
         return rootView;
+    }
+
+    @OnClick(R.id.listview_readings) void select(){
+        Intent
     }
 
     @Override

@@ -3,10 +3,13 @@ package com.health.hhi.bptracker.view;
 
 
 
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.app.LoaderManager;
+import android.support.v4.content.Loader;
 
 import com.health.hhi.bptracker.R;
 import com.health.hhi.bptracker.view.fragment.EntryFragment;
@@ -18,6 +21,7 @@ import com.health.hhi.bptracker.view.fragment.ListFragment;
  */
 public class MainActivity extends FragmentActivity {
 
+    public static final String INTENT_READING = "intent_reading";
 
     @Override
     protected void onCreate(Bundle savedInstanceState){

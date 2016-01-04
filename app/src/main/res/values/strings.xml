@@ -6,6 +6,8 @@
     <string name="hint_pulse">Pulse</string>
 
     <string name="button_submit">Submit</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_delete">Delete</string>
 
     <string name="label_systolic">Systolic</string>
     <string name="label_diastolic">Diastolic</string>
